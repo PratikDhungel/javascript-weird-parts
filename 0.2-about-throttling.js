@@ -10,9 +10,7 @@ const throttle = (fn, delay) => {
       return;
     }
     lastTimer = now;
-    timer = setTimeout(() => {
-      fn(...args);
-    }, delay);
+    fn(...args);
   };
 };
 
